@@ -6,17 +6,21 @@ import dynamic from 'next/dynamic'
 import { ManagedUIContext, useUI } from '@components/ui/context'
 import { Head, Navbar } from '@components/common'
 import { useAcceptCookies } from '@lib/hooks/useAcceptCookies'
-import { Button } from 'theme-ui'
-import { Sidebar } from '@components/ui'
-import { CartSidebarView } from '@components/cart'
+// import { Button } from 'theme-ui'
+// import { Sidebar } from '@components/ui'
+// import { CartSidebarView } from '@components/cart'
 import { CommerceProvider } from '@lib/shopify/storefront-data-hooks'
 import shopifyConfig from '@config/shopify'
-import { builder, BuilderContent, Builder } from '@builder.io/react'
+import {
+  builder,
+  BuilderContent,
+  Builder
+} from '@builder.io/react'
 import themesMap from '@config/theme'
 import '@builder.io/widgets'
 import 'react-spring-modal/styles.css'
 import seoConfig from '@config/seo.json'
-import NoSSR from './NoSSR'
+// import NoSSR from './NoSSR'
 
 const FeatureBar = dynamic(() => import('@components/common/FeatureBar'), {
   ssr: false,
